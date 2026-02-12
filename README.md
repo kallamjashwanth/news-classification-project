@@ -22,24 +22,33 @@ Files used:
 - test.csv
 
 ## Project Structure
-news_classification_project/
+## Project Structure
+
+```bash
+news-classification-project/
 │
 ├── data/
-│ ├── raw/
-│ └── processed/
+│   ├── raw/                
+│   └── processed/          
 │
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── feature_engineering.py
-│ ├── train.py
-│ ├── evaluate.py
-│ ├── config.py
+│   ├── data_preprocessing.py   
+│   ├── feature_engineering.py  
+│   ├── train.py                
+│   ├── evaluate.py             
+│   └── config.py               
 │
 ├── models/
+│   ├── news_classifier.pkl     
+│   └── tfidf_vectorizer.pkl    
+│
 ├── results/
+│   └── metrics.txt             
+│
 ├── requirements.txt
 ├── README.md
-└── main.py
+└── main.py                  t
+
 
 ## Installation
 1. Create virtual environment (optional):
