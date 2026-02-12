@@ -68,7 +68,7 @@ python main.py
 
 ## Results
 
-Model Used: Logistic Regression  
+Model Used: Linear Support Vector Machine (SVM) classifier 
 Feature Extraction: TF-IDF  
 
 Accuracy Achieved: 90.578
