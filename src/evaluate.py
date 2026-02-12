@@ -1,4 +1,4 @@
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from src.config import RESULTS_PATH
 
 
@@ -9,7 +9,7 @@ def evaluate_model(model, X_test, y_test):
     # Calculate accuracy
     accuracy = accuracy_score(y_test, predictions)
 
-    # Generate detailed report
+    # detailed report
     report = classification_report(y_test, predictions)
 
     # Save results to file

@@ -5,8 +5,8 @@ This project builds a machine learning pipeline to classify news articles into c
 
 The model uses:
 - Text preprocessing
-- TF-IDF feature extraction
-- Logistic Regression classifier
+- TF-IDF feature extraction with unigrams and bigrams
+- Linear Support Vector Machine (SVM) classifier
 
 ## Dataset
 Dataset used: AG News (Kaggle)
@@ -59,7 +59,7 @@ python main.py
 Model Used: Logistic Regression  
 Feature Extraction: TF-IDF  
 
-Accuracy Achieved: ~90.4%
+Accuracy Achieved: 90.578
 
 Classification report is saved in:
 results/metrics.txt

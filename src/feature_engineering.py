@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 def create_tfidf_features(X_train, X_test):
     # Create TF-IDF object
-    vectorizer = TfidfVectorizer(max_features=5000)
+    vectorizer = TfidfVectorizer(max_features=5000, ngram_range=(1,2))
 
     # Learn vocabulary from training data and transform it
     X_train_tfidf = vectorizer.fit_transform(X_train)

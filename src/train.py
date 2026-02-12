@@ -1,4 +1,4 @@
-from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
 import joblib
 import os
 from src.config import MODEL_PATH
@@ -6,7 +6,7 @@ from src.config import MODEL_PATH
 
 def train_model(X_train, y_train, vectorizer):
     # Create model
-    model = LogisticRegression(max_iter=1000)
+    model = LinearSVC(C=1.5)
 
     # Train model
     model.fit(X_train, y_train)
