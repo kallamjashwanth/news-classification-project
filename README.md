@@ -46,23 +46,25 @@ news-classification-project/
 ├── requirements.txt
 ├── README.md
 └── main.py                  
-
+```
 
 ## Installation
 1. Create virtual environment (optional):
 ```bash
 python -m venv venv
 venv\Scripts\activate (Windows)
-
+```
 
 2. Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
 ## How to Run
 Run the project using:
 ```bash
 python main.py
+```
 
 ## Results
 
