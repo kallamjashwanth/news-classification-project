@@ -22,41 +22,53 @@ Files used:
 - test.csv
 
 ## Project Structure
-news_classification_project/
+```bash
+news-classification-project/
 │
 ├── data/
-│ ├── raw/
-│ └── processed/
+│   ├── raw/                
+│   └── processed/          
 │
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── feature_engineering.py
-│ ├── train.py
-│ ├── evaluate.py
-│ ├── config.py
+│   ├── data_preprocessing.py   
+│   ├── feature_engineering.py  
+│   ├── train.py                
+│   ├── evaluate.py             
+│   └── config.py               
 │
 ├── models/
+│   ├── news_classifier.pkl     
+│   └── tfidf_vectorizer.pkl    
+│
 ├── results/
+│   └── metrics.txt             
+│
 ├── requirements.txt
 ├── README.md
-└── main.py
+└── main.py                  
+```
 
 ## Installation
 1. Create virtual environment (optional):
+```bash
 python -m venv venv
 venv\Scripts\activate (Windows)
-
+```
 
 2. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
 ## How to Run
 Run the project using:
+```bash
 python main.py
+```
 
 ## Results
 
-Model Used: Logistic Regression  
+Model Used: Linear Support Vector Machine (SVM) classifier 
 Feature Extraction: TF-IDF  
 
 Accuracy Achieved: 90.578
